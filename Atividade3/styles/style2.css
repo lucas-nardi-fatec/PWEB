@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(235, 221, 201);
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+.imageAPI1{
+
+    float: right;
+    margin-left: 100px;
+    height: 500px;
+    width: auto;
+
+}
+
+.formatSummaryImage {
+
+    display:inline-block;
+}
+
+.title {
+    font-family: "Epunda Slab", serif;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.highlight-title-text {
+    background-color: rgb(126, 71, 71);    
+}
+
+.summary-title{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.summary-topics{
+    margin-left: 40px;
+    text-align: left;
+    display: inline-block;
+}
+
+.summary-link{
+    font-size: 30px;
+    color:brown;
+    background-color: aliceblue;
+    text-decoration-line:none;
+}
+
+.summary-link:hover{
+    font-size: 30px;
+    color:brown;
+    background-color: rgb(145, 168, 188);
+    text-decoration-line:none;
+}
+
+p{
+    font-size:25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li{
+    margin-left: 40px;
+    font-size:25px;
+}
+
+.summary-link:active{
+    color:antiquewhite;
+    background-color: rgb(97, 110, 122);
+}
+
+.typesAPI-topics {
+    margin-left: 80px;
+}
+
+h2{
+    font-family:'Epunda Slab', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.header-1 {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav {
+    width: 960px;
+    margin: 0 auto;
+    /*qualquer conteúdo que "extrapole" as bordas do elemento 
+    é simplesmente recortado e escondido */
+    overflow: hidden;
+}
+
+.nav-logo {
+    color: rgb(169, 191, 212);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.nav-list {
+    list-style: none;
+    /* remover marcador */
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: rgb(173, 195, 216);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #93acbd;
+    background-color: #555;
+    border-radius: 3px;
+}

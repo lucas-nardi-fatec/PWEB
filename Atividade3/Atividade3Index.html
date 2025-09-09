@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Lopes Nardi">
+    <meta name="description" content="Trabalho Atividade 3 PWEB - FATEC Sorocaba">
+    <meta name="keywords" content="HTML, CSS, PWEB, API, Atividade, GitHub, Denilce">
+
+    <link rel = "stylesheet" href="./styles/style2.css" />
+
+    <title>Resumo sobre APIs</title>
+</head>
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav-logo">Conteúdo de TI-nteresse</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active">
+                            Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            Tópicos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            Notícias</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            Contatos</a>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            Sobre os Autores</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class ="title" id = "Title">
+            <h1 class="title-text"><span class="highlight-title-text">Um Resumo do Básico Sobre as APIs</span></h1>
+        </section>
+
+        <section id = "summary">
+            <nav>
+            <h2 class = "summary-title">Sumário</h2>
+                <div class = "formatSummaryImage">
+                    <ol class = "summary-topics">
+                        <li><a href = "#p1" class = "summary-link">Introdução</a></li>
+                        <li><a href = "#p2" class = "summary-link">O que é uma API?</a></li>
+                        <li><a href = "#p3" class = "summary-link">Como as APIs funcionam?</a></li>
+                        <li><a href = "#p4" class = "summary-link">Tipos de APIs</a></li>
+                        <li><a href = "#p5" class = "summary-link">Exemplos de APIs</a></li>
+                        <li><a href = "#p6" class = "summary-link">Protocolos, designs de arquitetura e linguagens em APIs</a></li>
+                        <li><a href = "#p7" class = "summary-link">APIs e serviços de web</a></li>
+                        <li><a href = "#p8" class = "summary-link">Benefícios das APIs</a></li>
+                        <li><a href = "#p9" class = "summary-link">Conclusão</a></li>
+                        <li><a href = "#p10" class = "summary-link">Referências</a></li>
+                    </ol>
+                    <img src = "./images/What-is-an-API.png" class = "imageAPI1"/>
+                </div>
+            </nav>
+        </section>
+
+        <section id = "body">
+
+            <section id = "introduction p1">
+                <h2>Introdução</h2>
+                <br>
+                <p>
+                    Em uma era de alta interconectividade digital, a otimização constante dos processos de comunicação entre diferentes dispositivos, aplicações, tecnologias, usuários, servidores, ... permite que os sistemas atinjam funcionalidades que possibilitam o aproveitamento daquilo que já foi desenvolvido em diversos ambientes, fazendo com que a roda não precise ser reinventada toda vez que algo é requerido. Além disso, a alta integração dentre diferentes tecnologias possibilita a manutenção do estilo de vida contemporâneo, onde tudo é integrado ao simples toque de uma tela – desde pagamentos até o controle de utensílios -.
+                </p>
+                <p>
+                    Uma ferramenta na área do desenvolvimento de Softwares e programas que é essencial nesta integração são as APIs, fundamentais para qualquer jovem aspirante desenvolvedor entrando no mercado de trabalho. Este trabalho apresenta um breve resumo do que são as APIs e como funcionam, mostrando também os tipos de APIs presentes no desenvolvimento e alguns exemplos de aplicações. Além disso, será feita uma breve menção dos protocolos, das linguagens e dos estilos de arquitetura presentes nas APIs. Finalmente, este artigo descreverá a diferença entre APIs e Web Services e citará alguns benefícios trazidos pelo uso de APIs.
+                </p>
+
+
+            </section>
+
+            <section id="p2">
+                <h2>O que é uma API?</h2>
+                <br>
+                <p>
+                    Em suma, uma API (do Inglês, “<i>Application Programming Interface</i>”) é um conjunto de regras e protocolos que permitem que aplicações de Software se comuniquem entre si para trocar informação, funcionalidades e recursos.         
+                </p>
+                <p>
+                    As APIs permitem que os desenvolvedores integrem capacidades de outras aplicações, simplificando e acelerando o desenvolvimento de Software e aplicações. Além disso, as APIs fornecem aos donos das aplicações uma maneira simples de tornar as informações e funções destas disponíveis para os diferentes departamentos do grupo ou organização, ou então para parceiros comerciais e terceiros.
+                </p>
+                <p>
+                    Toda API apresenta uma documentação no qual fornece instruções a respeito de tal e informações para os desenvolvedores em como trabalhar com a API e seus serviços. 
+                </p>
+            </section>
+
+            <section id="p3">
+                <h2>Como as APIs funcionam?</h2>
+                <br>
+                <p>
+                    O processo de comunicação possibilitado pela API pode ser pensado em termos de “pedidos” e “respostas” entre um “cliente” e um “servidor”. A aplicação enviando a solicitação é o cliente, e o servidor fornece a resposta. A API é a “ponte” estabelecendo a conexão dentre estes.                  
+                </p>
+                <p>
+                    Uma maneira simples de entender como uma API funciona é olhando para um exemplo comum: serviços de processador de pagamentos de terceiros. Quando um usuário compra um produto em um e-commerce, o site talvez solicite ao usuário a “pagar com o PayPal” ou outro sistema terceirizado. Essa função depende de APIs para fazer a conexão.
+                    <ul>
+                        <li>
+                            Quando o comprador clica no botão de pagar, uma chamada da API é enviada para trazer informação. Essa é a solicitação. Essa solicitação é processada para o servidor web através do URI (do Inglês, Uniform Resource Identifier) da API.
+                        </li>
+                        <li>
+                            Após receber uma solicitação válida da webpage do produto, a API chama o programa externo / o web server. 
+                        </li>
+                        <li>
+                            O servidor manda uma resposta para a API com a informação requisitada. 
+                        </li>
+                        <li>
+                            A API transfere a informação para a aplicação inicial, neste caso, o e-commerce.                                               
+                        </li>
+                    </ul>                
+                </p>
+
+            </section>
+
+            <section id="p4">
+                <h2>Tipos de APIs</h2>
+                <br>
+                <p>
+                    APIs podem ser categorizadas por caso de usuário, e incluem:
+                    <ol>
+                        <li><i>Data APIs</i>;</li>
+                        <li>APIs do Sistema Operacional;</li>
+                        <li>APIs remotas;</li>
+                        <li><i>Web APIs</i></li>
+                    </ol>
+                </p>
+                <p>
+                    A maioria das APIs hoje em dia são Web APIs, que são um tipo de APIs remotas. Os quatro tipos de Web APIs são:
+                    <ul>
+                        <li><i>Open APIs</i>;</li>
+                        <li><i>Partner APIs</i>;</li>
+                        <li><i>Internal APIs</i>;</li>
+                        <li><i>Composite APIs</i>.</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section id="p5">
+                <h2>Exemplos de APIs</h2>
+                <br>
+                <p>
+                    Como as APIs permitem que organizações abram acesso para seus recursos enquanto mantém segurança e controle, elas se tornaram um aspecto fundamental no comércio moderno e de aplicações pessoais.               
+                </p>
+                <p>
+                    As APIs permitem que os desenvolvedores integrem capacidades de outras aplicações, simplificando e acelerando o desenvolvimento de Software e aplicações. Além disso, as APIs fornecem aos donos das aplicações uma maneira simples de tornar as informações e funções destas disponíveis para os diferentes departamentos do grupo ou organização, ou então para parceiros comerciais e terceiros.
+                </p>
+                <p>
+                    Alguns exemplos de APIs que usuários frequentemente encontram são:
+                    <ul>
+                        <li>Logins universais;</li>
+                        <li>Internet das Coisas;</li>
+                        <li>Comparações presentes em sites de viagem;</li>
+                        <li>Aplicativos de navegação;</li>
+                        <li>Redes sociais;</li>
+                        <li>Aplicações SaaS</li>
+                    </ul> 
+                </p>
+            </section>
+
+            <section id="p6">
+                <h2>Protocolos, designs de arquitetura e linguagens em APIs</h2>
+                <br>
+                <p>
+                    Tradicionalmente, APIs se referem a interfaces conectados com uma aplicação criada com linguagens de programação de baixo nível, como JavaScript. Porém, APIs modernas variam em relação à suas arquiteturas e uso de formatos de informação. Elas são geralmente construídas para HTTP, resultando em uma interface amigável para desenvolvedores que é facilmente entendível por aplicativos escritos em Java, Ruby, Python e muitas outras linguagens.         
+                </p>
+                <p>
+                    A medida que o uso de APIs tem aumentado, o desenvolvimento e uso de protocolos, padrões e linguagens específicas tem ocorrido. Essas estruturas fornecem aos usuários com um conjunto de regras definidas, ou “especificações API”, que criam tipos de data, comandos e sintaxe aceitas. Em suma, estes protocolos API facilitaram a troca de informação padronizada.
+                </p>
+                <p>
+                    Alguns exemplos desses protocolos são:
+                    <ul>
+                        <li>SOAP;</li>
+                        <li>RPC;</li>
+                        <li>XML-RPC;</li>
+                        <li>JSON-RPC;</li>
+                        <li>gRPC;</li>
+                        <li>WebSocket;</li>
+                        <li>REST;</li>
+                        <li>GraphQL.</li>
+                    </ul> 
+                </p>
+            </section>
+
+            <section id="p7">
+                <h2>APIs e serviços de web</h2>
+                <br>
+                <p>
+                    Um serviço web é um componente de Software da Internet que facilita a transferência de informação em uma rede. Como um serviço web expõem a informação e funcionalidade de uma aplicação para outras, de certa maneira, todo serviço web é uma API. Porém, nem toda API é um serviço WEB.                
+                </p>
+            </section>
+
+            <section id="p8">
+                <h2>Benefícios das APIs</h2>
+                <br>
+                <p>
+                    Em suma, as APIs simplificam o design e o desenvolvimento de novas aplicações e serviços, e a integração e manutenção de serviços existentes. Além disso, as APIs fornecem benefícios significantes para desenvolvedores e grandes organizações:
+                    <ul>
+                        <li>
+                            Colaboração melhorada: empresas utilizam centenas e milhares de aplicações e plataformas Cloud. APIs permitem a integração destas para a comunicação eficiente. Através dessa integração, empresas podem automatizar workflows e melhorar a colaboração no ambiente de trabalho;
+                        </li>
+                        <li>
+                            Inovação acelerada: APIs fornecem flexibilidade, permitindo a empresas fazerem conexões com novos parceiros de negócios e fornecerem serviços para o mercado. Essa flexibilidade também possibilita as empresas de adentrarem novos mercados, incentivando a transformação digital e o acesso à novos mercados.
+                        </li>
+                        <li>
+                            Monetização da informação: muitas empresas escolhem oferecer suas APIs de graça, pelo menos inicialmente, para que possam construir uma audiência de desenvolvedores ao redor de sua marca e forjar relações com potenciais parceiros. Se a API garante acesso a ativos digitais de valor, o negócio pode monetizar a API ao vender acesso. Essa prática é conhecida como Economia da API.
+                        </li>
+                        <li>
+                            Segurança de sistema: As APIs separam a aplicação requerente da infraestrutura do serviço que responde e oferecem camadas de segurança entre os dois à medida que comunicam. Por exemplo, as chamadas de API requerem normalmente credenciais de autenticação. Os cabeçalhos HTTP, os cookies ou as cadeias de consulta podem proporcionar segurança adicional durante a troca de dados. Um gateway de API pode controlar o acesso para minimizar ainda mais as ameaças à segurança.
+                        </li>
+                        <li>
+                            Segurança e Privacidade do usuário: as APIs fornecem proteção adicional numa rede. Podem também fornecer outra camada de proteção para os utilizadores pessoais. Quando um sítio Web pede a localização de um utilizador (uma API de localização fornece esta informação), o utilizador pode decidir se permite ou recusa este pedido.
+                        </li>
+                    </ul>         
+                </p>
+            </section>
+
+            <section id="p9">
+                <h2>Conclusão</h2>
+                <br>
+                <p>
+                    Entender como as APIs funcionam e qual API se adequa melhor para a aplicação desenvolvida possibilita ao desenvolvedor simplificar seu processo de criação de código, enquanto ao mesmo tempo potencializa seu projeto com ferramentas poderosas presentes no mercado. O impacto das APIs vai além dos arquivos de código e de suas funcionalidades digitais: esses protocolos permitem empresas construir pontes e fomenta a inovação tecnológica coletiva.          
+                </p>
+            </section>
+
+            <section id="p10">
+                <h2>Referências</h2>
+                <br>
+                <p>
+                    GOODWIN, Michael. <i>“What is an API (application programming interface)?”.</i> Disponível em: <a href = "https://www.ibm.com/think/topics/api">https://www.ibm.com/think/topics/api</a>. Acesso em: 18 ago. 2025.          
+                </p>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
+
